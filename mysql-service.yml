@@ -1,7 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
+<<<<<<< HEAD
   name: mysql
+=======
+  name: mysqldb
+>>>>>>> 95b80f28c3481aec8a9cd2cb82714983ca4204ba
   labels:
     name: mysql-service
     app: node-mysql-app
@@ -11,5 +15,10 @@ spec:
     - port: 3306
       targetPort: 3306
   selector:
+<<<<<<< HEAD
     appName: node-mysql-app
     tier: backend
+=======
+    appName: node-mongo-app
+    tier: backend
+>>>>>>> 95b80f28c3481aec8a9cd2cb82714983ca4204ba
