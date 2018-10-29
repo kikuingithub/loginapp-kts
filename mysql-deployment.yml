@@ -21,9 +21,18 @@ spec:
                image: mysql
                ports:
                  - containerPort: 3306
+               volumeMounts:
+                 - mountPath: /var/lib/mysql
+                   name: pv
                env:
                - name: MYSQL_ROOT_PASSWORD
                  value: root
                - name: MYSQL_DATABASE
                  value: sample
-        
+        volumes:
+              - name: pv
+                emptyDir: {}
+
+
+
+
