@@ -18,8 +18,8 @@ spec:
       spec:
          containers:
              - name: node-mongo
-               image: kikuindocker/node-mongo-app
+               image: kikuindocker/simplewebapp
                ports:
-                -  containerPort: 3000
+                -  containerPort: 8080
 
 

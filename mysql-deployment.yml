@@ -13,7 +13,7 @@ spec:
       metadata:
          name: mysql-pod
          labels:
-            appName: node-mysql-app   ./data:/var/lib/mysql
+            appName: node-mysql-app
             tier: backend
       spec:
         containers:
