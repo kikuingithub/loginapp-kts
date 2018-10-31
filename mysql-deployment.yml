@@ -23,15 +23,16 @@ spec:
                  - containerPort: 3306
                volumeMounts:
                  - mountPath: /var/lib/mysql
-                   name: pv
+                   name: datamount
                env:
                - name: MYSQL_ROOT_PASSWORD
                  value: root
                - name: MYSQL_DATABASE
                  value: sample
         volumes:
-              - name: pv
-                emptyDir: {}
+              - name: datamount
+                hostPath:
+                      path: /var/datavol
 
 
 

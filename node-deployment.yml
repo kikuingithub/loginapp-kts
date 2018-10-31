@@ -4,6 +4,7 @@ metadata:
    name: node-app-deployment
    labels:
       appName: node-mongo-app
+      name: node-deployment
 spec:
    replicas: 3
    selector:
