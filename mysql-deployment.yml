@@ -33,6 +33,8 @@ spec:
               - name: datamount
                 hostPath:
                       path: /var/datavol
+        nodeSelector:
+                nodeName: mysql
 
 
 
